@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.askel.rssfeed.PrefActivity">
+
+    <TextView
+        android:id="@+id/rss_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only RSS2.0 supported"/>
+
+    <EditText
+        android:id="@+id/pref_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rss_prompt"
+        android:ems="10"
+        android:hint="@string/get_link"
+        android:inputType="textPersonName"
+        />
+
+    <Spinner
+        android:id="@+id/amountSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pref_link"
+        android:text="Amount of Items"
+        />
+
+    <Spinner
+        android:id="@+id/timerSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amountSpinner"
+        android:text="Update Frequency"
+        />
+
+
+
+    <Button
+        android:id="@+id/button_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timerSpinner"
+        android:onClick="commitChanges"
+        android:text="Commit changes" />
+
+</RelativeLayout>

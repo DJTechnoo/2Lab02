@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RssFeed</string>
+    <string name="fetch">Fetch</string>
+    <string name="copy_url_here">copy url here</string>
+    <string name="link">link:</string>
+    <string name="get_link">get link</string>
+    <string-array name="amount_spinner">
+        <item>10 items</item>
+        <item>20 items</item>
+        <item>50 items</item>
+        <item>100 items</item>
+    </string-array>
+
+    <string-array name="timer_spinner">
+        <item>10 min</item>
+        <item>1 hr</item>
+        <item>24 hrs</item>
+    </string-array>
+</resources>
