@@ -115,13 +115,14 @@ public class MainActivity extends AppCompatActivity {
                     result = xmlPullParser.getText();
                     xmlPullParser.nextTag();
                 }
-
-                if (name.equalsIgnoreCase("title")) {
-                    title = result;
-                } else if (name.equalsIgnoreCase("link")) {
-                    link = result;
-                } else if (name.equalsIgnoreCase("description")) {
-                    description = result;
+                if(isItem) {
+                    if (name.equalsIgnoreCase("title")) {
+                        title = result;
+                    } else if (name.equalsIgnoreCase("link")) {
+                        link = result;
+                    } else if (name.equalsIgnoreCase("description")) {
+                        description = result;
+                    }
                 }
 
                 if (title != null && link != null && description != null) {
